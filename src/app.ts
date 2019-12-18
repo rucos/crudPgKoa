@@ -1,5 +1,6 @@
 import * as Koa from 'koa'
 import Routes from './routes'
+import logging from './logging'
 
 class App {
 	public app: Koa.DefaultContext
@@ -13,6 +14,7 @@ class App {
 	}
 
 	private setConfig(): void {
+		this.app.use(logging)
 		this.app.use(this.router.routes())
 	}
 }
