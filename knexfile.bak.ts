@@ -17,7 +17,7 @@ export default {
   },
   development: {
     client: 'pg',
-    connection: 'postgres://postgres:123@localhost:5432/koa_api',
+    connection: 'postgres://username:password@localhost:5432/koa_api',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
