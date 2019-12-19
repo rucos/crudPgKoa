@@ -6,7 +6,10 @@
     "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/server.ts",
     "test": "jest",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
-    "eslint:dump": "eslint --print-config ./.eslintrc.json"
+    "eslint:dump": "eslint --print-config ./.eslintrc.json",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback",
+    "db:seed": "knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
+    "@types/knex": "^0.16.1",
     "@types/koa": "^2.11.0",
     "@types/koa-router": "^7.0.42",
     "@types/node": "^12.12.18",
