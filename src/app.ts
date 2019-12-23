@@ -10,10 +10,10 @@ class App {
 	constructor() {
 		this.app = new Koa()
 
-		this.setConfig()
+		this.setMiddleware()
 	}
 
-	private setConfig(): void {
+	private setMiddleware(): void {
 		this.app.use(logging)
 		this.app.use(this.router.routes())
 	}

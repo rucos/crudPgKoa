@@ -1,4 +1,4 @@
 node_modules/*
 jest.config.js
-knexfile.bak.ts
-knexfile.ts
+.env.example
+.env
