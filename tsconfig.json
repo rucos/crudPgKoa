@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "lib": [
+      "es5",
+      "es6"
+    ],
     "target": "es2017",
     "noImplicitAny": true,
     "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "sourceMap": true
   },
   "include": [
